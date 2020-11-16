@@ -86,7 +86,7 @@ python run_finetune_full.py \
 If you find the our codes and datasets useful for your research or development, please cite our paper:
 
 ```
-@inproceedings{DBLP:conf/cikm/ZhouWZZWZWW20,
+@inproceedings{CIKM2020-S3Rec,
   author    = {Kun Zhou and
                Hui Wang and
                Wayne Xin Zhao and
