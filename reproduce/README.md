@@ -9,16 +9,16 @@ Finetune_sample-{data-name}-epochs-{pretrain_epochs_num}.pt
 ```
 ## Note
 
-There is a minor bug in the old version codes, which is that we did not set random seed for all random methods.
+There is a minor bug in the old version codes, which is that we did not set the random seed for all random methods.
  We are very sorry for this error. 
-And we deleted pre-trained model considering the disk space. So we re-run the code and get new results, which could be
+And we deleted pre-trained models considering the disk space. So we re-run the code and get new results, which could be
 considered as reproduced the results in the paper.
 
 When you fine-tune the model, please check the log information. If it is
 ```
-ckp_file Not Found! The Model is same as SASRec.
+ckp_file Not Found! The Model is the same as SASRec.
 ```
-then you actually run the SASRec and the model's parameters are initialized randomly. Otherwise you would see
+then you actually run the SASRec and the model's parameters are initialized randomly. Otherwise, you would see
 ```
 Load Checkpoint From ckp_path!
 ```
