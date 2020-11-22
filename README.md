@@ -1,6 +1,6 @@
 
 Code for our CIKM 2020 Paper ["**S3-Rec: Self-Supervised Learning for Sequential
- Recommendation with Mutual Information Maximization"**](https://arxiv.org/pdf/2008.07873.pdf)
+ Recommendation with Mutual Information Maximization"**](https://arxiv.org/abs/2008.07873)
 
 ## Overview
 The major contributions of our paper are four self-supervised optimization objectives, which capture item-attribute, sequence-item, sequence-attribute and sequence-subsequence correlations in raw data, respectively. And these optimization objectives are developed in a unified form of mutual information maximization.
