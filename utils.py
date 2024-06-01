@@ -191,7 +191,7 @@ def get_user_seqs_and_sample(data_file, sample_file):
     return user_seq, max_item, sample_seq
 
 def get_item2attribute_json(data_file):
-    item2attribute = json.loads(open(data_file).readline())
+    item2attribute = json.load(open(data_file))
     attribute_set = set()
     for item, attributes in item2attribute.items():
         attribute_set = attribute_set | set(attributes)
