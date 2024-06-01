@@ -92,8 +92,7 @@ def main():
     for epoch in range(args.pre_epochs):
 
         pretrain_dataset = PretrainDataset(args, user_seq, long_sequence)
-        pretrain_sampler = RandomSampler(pretrain_dataset)
-        pretrain_dataloader = DataLoader(pretrain_dataset, sampler=pretrain_sampler, batch_size=args.pre_batch_size, num_workers=8)
+        pretrain_dataloader = DataLoader(pretrain_dataset, batch_size=args.pre_batch_size, num_workers=16)
 
         trainer.pretrain(epoch, pretrain_dataloader)
 
