@@ -101,6 +101,8 @@ def generate_rating_matrix_valid(user_seq, num_users, num_items):
     col = []
     data = []
     for user_id, item_list in enumerate(user_seq):
+        if len(item_list) <= 3:
+            continue
         for item in item_list[:-2]: #
             row.append(user_id)
             col.append(item)
@@ -119,6 +121,8 @@ def generate_rating_matrix_test(user_seq, num_users, num_items):
     col = []
     data = []
     for user_id, item_list in enumerate(user_seq):
+        if len(item_list) <= 3:
+            continue
         for item in item_list[:-1]: #
             row.append(user_id)
             col.append(item)
